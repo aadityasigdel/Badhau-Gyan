@@ -20,7 +20,7 @@ export default function Landing() {
                                 Badhau Gyan
                             </h1>
                             <p className="text-xl text-[#0033A0] font-medium mt-2">
-                                Knowledge for Nepal's Progress
+                                Ghau Ghar ko khabar
                             </p>
                         </div>
                     </div>

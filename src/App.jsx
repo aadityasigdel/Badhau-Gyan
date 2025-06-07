@@ -5,6 +5,7 @@ import Landing from "./Landing.jsx";
 import Terms from "./Terms.jsx";
 import SignUp from "./SignUp.jsx";
 import Login from "./Login.jsx";
+import Home from "./Clients/home.jsx";
 function App() {
     return (
         <BrowserRouter>
@@ -13,6 +14,7 @@ function App() {
                 <Route path="/Terms" element={<Terms />} />
                 <Route path="/signup" element={<SignUp />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/home" element={<Home />} />
             </Routes>
         </BrowserRouter>
     );
