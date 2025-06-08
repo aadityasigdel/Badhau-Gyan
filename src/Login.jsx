@@ -15,8 +15,8 @@ export default function Login() {
     };
 
     const handleSubmit = async (e) => {
-       
-        navigate("/home");
+        e.preventDefault();
+        navigate("/client/home");
     };
 
     return (
