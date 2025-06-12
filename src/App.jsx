@@ -6,6 +6,7 @@ import Terms from "./Terms.jsx";
 import SignUp from "./SignUp.jsx";
 import Login from "./Login.jsx";
 import ClientRouter from "./Clients/Routes.jsx";
+import AdminRoute from "./Admin/AdminRoute.jsx";
 function App() {
     return (
         <BrowserRouter>
@@ -15,6 +16,7 @@ function App() {
                 <Route path="/signup" element={<SignUp />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/client/*" element={<ClientRouter />} />
+                <Route path="/admin/*" element={<AdminRoute />} />
             </Routes>
         </BrowserRouter>
     );
