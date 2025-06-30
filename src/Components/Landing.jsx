@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
+import NavCompBar from "./ComponentNav.jsx";
 
 
 import Auth from "../Utils/Auth.jsx";
@@ -13,6 +14,7 @@ export default function Landing() {
     return (
         <>
             <div className=" flex flex-col md:flex h-screen bg-gray-100 m-0 p-0">
+                        <NavCompBar />
                 <div className="flex md:flex-row w-full h-full">
                     <div className="md:w-2/3 w-full flex items-center justify-center bg-[#E8EBED]">
                         <div className="z-10 text-center px-4">

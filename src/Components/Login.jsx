@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import logo from "../assets/Logo.png";
-
+import NavCompBar from "./ComponentNav.jsx";
 
 export default function Login() {
     const navigate = useNavigate();
@@ -21,7 +21,8 @@ export default function Login() {
     };
 
     return (
-        <div className="min-h-screen bg-[#E8EBED] flex flex-col items-center justify-center px-4">
+        <div className="min-h-screen bg-[#E8EBED] flex flex-col items-center justify-between px-4">
+            <NavCompBar />
             <div className="bg-white shadow-xl rounded-xl w-full max-w-md p-6">
                 <div className="text-center mb-6">
                     <img src={logo} alt="Logo" className="w-1/3 mx-auto mb-2" />
