@@ -2,8 +2,15 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import logo from "./assets/logo.png";
-
+import { GoogleLogin ,googleLogout } from "@react-oauth/google";
+const clientID = "863308908711-0a7uiqslmaloru4eok3krqgr4jf7ehmc.apps.googleusercontent.com"
 export default function Landing() {
+
+     const handleLoginSuccess = (credentialResponse) => {
+        console.log("Google login success:", credentialResponse);
+        navigate("/client/home");
+    };
+
     const navigate = useNavigate();
     return (
         <>
@@ -33,15 +40,13 @@ export default function Landing() {
                             </span>
                         </h2>
 
-                        <button
-                            onClick={() =>
-                                alert("Google Sign Up is not implemented yet.")
-                            }
-                            className=" flex items-center justify-center gap-2 text-white bg-[#C11235] hover:bg-[#A0102D] px-6 py-3 rounded-xl w-full max-w-sm text-lg font-semibold transition shadow "
-                        >
-                            <i class="fa-brands fa-google"></i> 
-                            Sign Up using Google
-                        </button>
+
+                        <GoogleLogin
+                            className="flex items-center justify-center gap-2 text-white bg-[#C11235] hover:bg-[#A0102D] px-6 py-3 rounded-xl w-full max-w-sm text-lg font-semibold transition shadow"
+                            onSuccess={handleLoginSuccess}
+                            onError={() => console.log("Failed to login")}
+                        />
+
 
                         <span className="text-[#0033A0] font-semibold text-lg">
                             or
