@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "./assets/logo.png";
+import logo from "../assets/logo.png";
 
 export default function SignUp() {
     const navigate = useNavigate();
 
     const [success, setSuccess] = useState("");
-  const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState({
         username: "",
         email: "",
         password: "",
@@ -18,7 +18,7 @@ export default function SignUp() {
     };
 
     const handleSubmit = (e) => {
-  
+
         setSuccess("Account created!");
 
     };
@@ -74,7 +74,7 @@ export default function SignUp() {
                         className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C11235]"
                     />
 
-                  
+
                     <button
                         type="submit"
                         className="w-full bg-[#C11235] text-white font-semibold py-2 rounded-lg hover:bg-[#A0102D] transition"

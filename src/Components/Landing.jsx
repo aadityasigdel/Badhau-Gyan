@@ -1,15 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import logo from "./assets/logo.png";
-import { GoogleLogin ,googleLogout } from "@react-oauth/google";
-const clientID = "863308908711-0a7uiqslmaloru4eok3krqgr4jf7ehmc.apps.googleusercontent.com"
+import logo from "../assets/logo.png";
+
+
+import Auth from "../Utils/Auth.jsx";
 export default function Landing() {
 
-     const handleLoginSuccess = (credentialResponse) => {
-        console.log("Google login success:", credentialResponse);
-        navigate("/client/home");
-    };
+ 
 
     const navigate = useNavigate();
     return (
@@ -41,12 +39,8 @@ export default function Landing() {
                         </h2>
 
 
-                        <GoogleLogin
-                            className="flex items-center justify-center gap-2 text-white bg-[#C11235] hover:bg-[#A0102D] px-6 py-3 rounded-xl w-full max-w-sm text-lg font-semibold transition shadow"
-                            onSuccess={handleLoginSuccess}
-                            onError={() => console.log("Failed to login")}
-                        />
-
+                       
+                        <Auth/>
 
                         <span className="text-[#0033A0] font-semibold text-lg">
                             or
