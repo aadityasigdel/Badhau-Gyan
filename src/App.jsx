@@ -12,7 +12,6 @@ function App() {
     return (
         <>
             <BrowserRouter>
-                <API />
                 <Routes>
                     <Route path="/" element={<Landing />} />
                     <Route path="/Terms" element={<Terms />} />

@@ -14,17 +14,10 @@ export default function TopBar() {
                 <h1 className="text-2xl font-extrabold bg-gradient-to-r from-[#0033A0] via-[#C11235] to-[#0033A0] text-transparent bg-clip-text animate-pulse">
                     Badhau Gyan
                 </h1>
-               
-            </div>
-             <nav className=" sm:hidden md:flex items-center gap-8">
-                    <NavLink icon={<FiHome />} label="Home" to="/client/home" />
-                    <NavLink icon={<FiUsers />} label="Friends" to="/client/friends" />
-                    <NavLink icon={<FiMessageCircle />} label="Messages" to="/client/messages" />
-                    <NavLink icon={<FiActivity />} label="Discussions" to="/client/discussions" />
-                    <NavLink icon={<FiUser />} label="Profile" to="/client/profile" />
-                </nav>
+    
 
-            <nav className="hidden md:flex items-center gap-8">
+            </div>
+            <nav className="  md:!flex hidden items-center gap-8">
                 <NavLink icon={<FiHome />} label="Home" to="/client/home" />
                 <NavLink icon={<FiUsers />} label="Friends" to="/client/friends" />
                 <NavLink icon={<FiMessageCircle />} label="Messages" to="/client/messages" />
@@ -32,7 +25,8 @@ export default function TopBar() {
                 <NavLink icon={<FiUser />} label="Profile" to="/client/profile" />
             </nav>
 
-            <button className="md:hidden text-[#0033A0] text-2xl" onClick={() => setMenuOpen(!menuOpen)}>
+
+            <button className=" md:hidden  text-[#0033A0] text-2xl" onClick={() => setMenuOpen(!menuOpen)}>
                 <FiMenu />
             </button>
 

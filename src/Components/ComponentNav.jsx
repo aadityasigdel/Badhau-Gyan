@@ -16,19 +16,13 @@ export default function NavCompBar() {
                 </h1>
 
             </div>
-            <nav className=" sm:hidden md:flex items-center gap-8">
+            <nav className="  md:!flex hidden items-center gap-8">
                 <NavLink icon={<FiHome />} label="Landing" to="/" />
                 <NavLink icon={<FiActivity />} label="Login" to="/Login" />
                 <NavLink icon={<FiUser />} label="SignUp" to="/signup" />
                 <NavLink icon={<FiUser />} label="Terms&Conditions" to="/Terms" />
             </nav>
 
-            <nav className="hidden md:flex items-center gap-8">
-                <NavLink icon={<FiHome />} label="Landing" to="/" />
-                <NavLink icon={<FiActivity />} label="Login" to="/Login" />
-                <NavLink icon={<FiUser />} label="SignUp" to="/signup" />
-                <NavLink icon={<FiUser />} label="Terms&Conditions" to="/Terms" />
-            </nav>
 
             <button className="md:hidden text-[#0033A0] text-2xl" onClick={() => setMenuOpen(!menuOpen)}>
                 <FiMenu />

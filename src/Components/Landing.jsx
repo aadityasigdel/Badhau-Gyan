@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import NavCompBar from "./ComponentNav.jsx";
-
-
+import API from "../Utils/Api.jsx";
+import {ContextData} from "../ContextAPI/Context.jsx";
 import Auth from "../Utils/Auth.jsx";
 export default function Landing() {
 
- 
-
+    const {ApiData,setApiData} = useContext(ContextData);
     const navigate = useNavigate();
+    console.log(ApiData)
+
     return (
         <>
+                        <API/>
             <div className=" flex flex-col md:flex h-screen bg-gray-100 m-0 p-0">
                         <NavCompBar />
                 <div className="flex md:flex-row w-full h-full">
