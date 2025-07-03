@@ -42,7 +42,7 @@ export default function Messages() {
                             <input
                                 type="text"
                                 placeholder="Type a message..."
-                                className="flex-1 px-3 py-2 rounded-xl text-sm shadow-[inset_0_2px_1px_rgba(0,0,0,0.3)] shadow-gray-400"
+                                className="flex-1 px-3 py-2 rounded-xl text-sm shadow-[inset_0_2px_1px_rgba(0,0,0,2)] shadow-gray-400"
                             />
                             <button className="bg-blue-500 text-white px-4 py-2 rounded-full text-sm">
                                 Send

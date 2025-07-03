@@ -4,7 +4,7 @@ import Home from './Home.jsx';
 import Navigation from './Navigation.jsx';
 import Friends from './Friends.jsx';
 import Messages from './Messages.jsx';
-import Discussions from './Chat.jsx';
+import Discussions from './Discuss.jsx';
 import Profile from './Profile.jsx';
 
 export default function AppRoutes() {
