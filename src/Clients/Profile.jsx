@@ -4,8 +4,8 @@ import Navigation from './Navigation.jsx';
 export default function Profile() {
     const posts = [
         { id: 1, content: "first post" },
-        { id: 2, content: "first post" },
-        { id: 3, content: "first post" }
+        { id: 2, content: "second post" },
+        { id: 3, content: "thirs post" }
     ];
 
     return (
