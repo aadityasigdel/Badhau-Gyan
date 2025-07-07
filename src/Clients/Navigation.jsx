@@ -14,7 +14,7 @@ export default function TopBar() {
                 <h1 className="text-2xl font-extrabold bg-gradient-to-r from-[#0033A0] via-[#C11235] to-[#0033A0] text-transparent bg-clip-text animate-pulse">
                     Badhau Gyan
                 </h1>
-    
+
 
             </div>
             <nav className="  md:!flex hidden items-center gap-8">
@@ -23,6 +23,7 @@ export default function TopBar() {
                 <NavLink icon={<FiMessageCircle />} label="Messages" to="/client/messages" />
                 <NavLink icon={<FiActivity />} label="Discussions" to="/client/discussions" />
                 <NavLink icon={<FiUser />} label="Profile" to="/client/profile" />
+                <NavLink icon={<FiUser />} label="Profile" to="/client/Work" />
             </nav>
 
 
