@@ -6,14 +6,14 @@ export default function API() {
     const {ApiData, setApiData} = useContext(ContextData);
 
     const handleFetch = async () => {
-        const result = await fetch("https://mocki.io/v1/ab8d3b45-9db4-4886-9bda-4e238b776970")
+        const result = await fetch("https://mocki.io/v1/8a651d46-4939-4112-ab3f-e3e3812e9a7d")
         const data = await result.json()
         setApiData(data)
         console.log(data)
     }
     useEffect(
         () => {
-            handleFetch
+            handleFetch();
         }, []
     )
     return null
